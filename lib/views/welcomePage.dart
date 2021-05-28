@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notmyproject/views/aboutUs.dart';
+import 'package:notmyproject/views/districtPage.dart';
 
 class welcomePage extends StatefulWidget {
   @override
@@ -56,7 +57,14 @@ class _welcomePageState extends State<welcomePage> {
               SizedBox(height: 50),
               ElevatedButton(
                   child: Text('START'),
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(
+                        builder:(context){
+                          return districtPage();
+                        }
+                      )
+                    );
+                  },
                   style: welcomePageButtonStyle,
               ),
               SizedBox(height: 30),
