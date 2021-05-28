@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notmyproject/views/aboutUs.dart';
 
 class welcomePage extends StatefulWidget {
   @override
@@ -61,7 +62,14 @@ class _welcomePageState extends State<welcomePage> {
               SizedBox(height: 30),
               ElevatedButton(
                 child: Text('ABOUT US'),
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(
+                      builder:(context){
+                        return aboutUs();
+                      }
+                    )
+                  );
+                },
                 style: welcomePageButtonStyle,
               )
             ],
