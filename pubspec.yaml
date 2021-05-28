@@ -67,9 +67,12 @@ flutter:
    - family: Georgia
      fonts:
        - asset: assets/fonts/Georgia.ttf
-   - family: Gothic
+   - family: Lucida
      fonts:
        - asset: assets/fonts/Lucida Sans Unicode.ttf
+   - family: Gothic
+     fonts:
+       - asset: assets/fonts/GOTHIC.ttf
 
   #
   # For details regarding fonts from package dependencies,
