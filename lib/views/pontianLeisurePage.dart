@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 
 class pontianInfoLeisurePage extends StatefulWidget {
@@ -63,7 +64,17 @@ class _pontianInfoLeisurePageState extends State<pontianInfoLeisurePage> {
                       color: Colors.white
                     ),
                   ),
-                  moreDetailsButton('assets/images/moreDetails.png', 'More details'),
+                  GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(
+                            builder:(context){
+                              return kukupIslandInfoPage();
+                            }
+                          )
+                        );
+                      },
+                      child: moreDetailsButton('assets/images/moreDetails.png', 'More details')
+                  ),
                 ],
               ),
 
