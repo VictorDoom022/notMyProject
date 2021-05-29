@@ -56,9 +56,18 @@ class _pontianInfoState extends State<pontianInfo> {
                     )
                   ),
                   Center(
-                      child: Text(
-                          'Restaurant',
-                        style: gridTextStyle,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image(
+                            image: AssetImage('assets/images/restaurantIcon.png'),
+                            height: 80,
+                          ),
+                          Text(
+                              'Restaurant',
+                            style: gridTextStyle,
+                          ),
+                        ],
                       )
                   )
                 ],
@@ -75,9 +84,18 @@ class _pontianInfoState extends State<pontianInfo> {
                     )
                   ),
                   Center(
-                      child: Text(
-                        'Beach',
-                        style: gridTextStyle,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image(
+                            image: AssetImage('assets/images/beachIcon.png'),
+                            height: 80,
+                          ),
+                          Text(
+                            'Beach',
+                            style: gridTextStyle,
+                          ),
+                        ],
                       )
                   )
                 ],
@@ -93,9 +111,18 @@ class _pontianInfoState extends State<pontianInfo> {
                       )
                   ),
                   Center(
-                      child: Text(
-                        'Theme Park',
-                        style: gridTextStyle,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image(
+                            image: AssetImage('assets/images/themeParkIcon.png'),
+                            height: 80,
+                          ),
+                          Text(
+                            'Theme Park',
+                            style: gridTextStyle,
+                          ),
+                        ],
                       )
                   )
                 ],
@@ -111,9 +138,18 @@ class _pontianInfoState extends State<pontianInfo> {
                     ),
                   ),
                   Center(
-                      child: Text(
-                        'Adventure',
-                        style: gridTextStyle,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image(
+                            image: AssetImage('assets/images/adventureIcon.png'),
+                            height: 80,
+                          ),
+                          Text(
+                            'Adventure',
+                            style: gridTextStyle,
+                          ),
+                        ],
                       )
                   )
                 ],
@@ -138,9 +174,18 @@ class _pontianInfoState extends State<pontianInfo> {
                       ),
                     ),
                     Center(
-                        child: Text(
-                          'Lesisure',
-                          style: gridTextStyle,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/leisureIcon.png'),
+                              height: 80,
+                            ),
+                            Text(
+                              'Lesisure',
+                              style: gridTextStyle,
+                            ),
+                          ],
                         )
                     )
                   ],
@@ -157,9 +202,18 @@ class _pontianInfoState extends State<pontianInfo> {
                     ),
                   ),
                   Center(
-                      child: Text(
-                        'Landmark',
-                        style: gridTextStyle,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image(
+                            image: AssetImage('assets/images/landmarkIcon.png'),
+                            height: 80,
+                          ),
+                          Text(
+                            'Landmark',
+                            style: gridTextStyle,
+                          ),
+                        ],
                       )
                   )
                 ],
