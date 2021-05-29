@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notmyproject/views/pontianInfo.dart';
 import 'package:notmyproject/views/welcomePage.dart';
 
 class districtPage extends StatefulWidget {
@@ -74,12 +75,22 @@ class _districtPageState extends State<districtPage> {
                 height: 100,
               ),
             ),
-            Container(
-              padding: EdgeInsets.fromLTRB(130, 450, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/pontian.png'),
-                width: 100,
-                height: 100,
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder:(context){
+                      return pontianInfo();
+                    }
+                )
+                );
+              },
+              child: Container(
+                padding: EdgeInsets.fromLTRB(130, 450, 0, 0),
+                child: Image(
+                  image: AssetImage('assets/images/pontian.png'),
+                  width: 100,
+                  height: 100,
+                ),
               ),
             ),
             Container(
