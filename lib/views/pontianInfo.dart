@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notmyproject/views/districtPage.dart';
+import 'package:notmyproject/views/pontianLeisurePage.dart';
 
 class pontianInfo extends StatefulWidget {
   @override
@@ -118,22 +119,32 @@ class _pontianInfoState extends State<pontianInfo> {
                 ],
               ),
             ),
-            Container(
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    child: Image(
-                      image: AssetImage('assets/images/ps5.png'),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Center(
-                      child: Text(
-                        'Theme',
-                        style: gridTextStyle,
-                      )
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder:(context){
+                      return pontianInfoLeisurePage();
+                    }
                   )
-                ],
+                );
+              },
+              child: Container(
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: Image(
+                        image: AssetImage('assets/images/ps5.png'),
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    Center(
+                        child: Text(
+                          'Lesisure',
+                          style: gridTextStyle,
+                        )
+                    )
+                  ],
+                ),
               ),
             ),
             Container(
