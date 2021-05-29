@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 
-class pontianInfoLeisurePage extends StatefulWidget {
+class pontianLeisurePage extends StatefulWidget {
   @override
-  _pontianInfoLeisurePageState createState() => _pontianInfoLeisurePageState();
+  _pontianLeisurePageState createState() => _pontianLeisurePageState();
 }
 
-class _pontianInfoLeisurePageState extends State<pontianInfoLeisurePage> {
+class _pontianLeisurePageState extends State<pontianLeisurePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

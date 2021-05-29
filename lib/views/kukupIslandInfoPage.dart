@@ -17,7 +17,7 @@ class _kukupIslandInfoPageState extends State<kukupIslandInfoPage> {
           onPressed: (){
             Navigator.push(context, MaterialPageRoute(
                 builder:(context){
-                  return pontianInfoLeisurePage();
+                  return pontianLeisurePage();
                 }
             )
             );

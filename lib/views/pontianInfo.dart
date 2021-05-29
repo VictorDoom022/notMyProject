@@ -123,7 +123,7 @@ class _pontianInfoState extends State<pontianInfo> {
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(
                     builder:(context){
-                      return pontianInfoLeisurePage();
+                      return pontianLeisurePage();
                     }
                   )
                 );
