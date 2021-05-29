@@ -127,6 +127,13 @@ class _kukupIslandInfoPageState extends State<kukupIslandInfoPage> {
                 ],
               ),
             ),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Image(
+                image: AssetImage('assets/images/aHuman.png'),
+                width: 200,
+              ),
+            ),
           ],
         ),
       ),
