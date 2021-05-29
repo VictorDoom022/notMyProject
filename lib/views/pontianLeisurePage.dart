@@ -63,11 +63,7 @@ class _pontianInfoLeisurePageState extends State<pontianInfoLeisurePage> {
                       color: Colors.white
                     ),
                   ),
-                  Image(
-                    image: AssetImage('assets/images/moreDetails.png'),
-                    height: 60,
-                    width: 150,
-                  )
+                  moreDetailsButton('assets/images/moreDetails.png', 'More details'),
                 ],
               ),
 
@@ -99,11 +95,7 @@ class _pontianInfoLeisurePageState extends State<pontianInfoLeisurePage> {
                         color: Colors.white
                     ),
                   ),
-                  Image(
-                    image: AssetImage('assets/images/moreDetails.png'),
-                    height: 60,
-                    width: 150,
-                  )
+                  moreDetailsButton('assets/images/moreDetails.png', 'More details'),
                 ],
               ),
 
@@ -111,6 +103,29 @@ class _pontianInfoLeisurePageState extends State<pontianInfoLeisurePage> {
           ],
         ),
       ),
+    );
+  }
+
+  Widget moreDetailsButton(String imageDir, String buttonTitle){
+    return Stack(
+      children: [
+        Image(
+          image: AssetImage(imageDir),
+          height: 60,
+          width: 150,
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(13, 20, 0, 0),
+          child: Text(
+            buttonTitle,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'Lucida'
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

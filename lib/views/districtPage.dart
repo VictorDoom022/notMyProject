@@ -45,35 +45,19 @@ class _districtPageState extends State<districtPage> {
             ),
             Container(
               padding: EdgeInsets.fromLTRB(25, 150, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/segamat.png'),
-                width: 100,
-                height: 100,
-              ),
+              child: moreDetailsButton('assets/images/segamat.png', 'Segamat')
             ),
             Container(
               padding: EdgeInsets.fromLTRB(100, 215, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/ledang.png'),
-                width: 100,
-                height: 100,
-              ),
+              child: moreDetailsButton('assets/images/ledang.png', 'Ledang')
             ),
             Container(
               padding: EdgeInsets.fromLTRB(20, 300, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/muar.png'),
-                width: 100,
-                height: 100,
-              ),
+              child: moreDetailsButton('assets/images/muar.png', 'Muar')
             ),
             Container(
               padding: EdgeInsets.fromLTRB(70, 370, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/batuPahat.png'),
-                width: 100,
-                height: 100,
-              ),
+              child: moreDetailsButton('assets/images/batuPahat.png', 'Batu Pahat')
             ),
             GestureDetector(
               onTap: (){
@@ -86,56 +70,57 @@ class _districtPageState extends State<districtPage> {
               },
               child: Container(
                 padding: EdgeInsets.fromLTRB(130, 450, 0, 0),
-                child: Image(
-                  image: AssetImage('assets/images/pontian.png'),
-                  width: 100,
-                  height: 100,
-                ),
+                child: moreDetailsButton('assets/images/pontian.png', 'Pontian')
               ),
             ),
             Container(
               padding: EdgeInsets.fromLTRB(230, 215, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/msersing.png'),
-                width: 100,
-                height: 100,
-              ),
+              child: moreDetailsButton('assets/images/msersing.png', 'Mersing')
             ),
             Container(
               padding: EdgeInsets.fromLTRB(160, 300, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/kluang.png'),
-                width: 100,
-                height: 100,
-              ),
+                child: moreDetailsButton('assets/images/kluang.png', 'Kluang')
             ),
             Container(
               padding: EdgeInsets.fromLTRB(280, 350, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/kotaTinggi.png'),
-                width: 100,
-                height: 100,
-              ),
+                child: moreDetailsButton('assets/images/kotaTinggi.png', 'Kota Tinggi')
             ),
             Container(
               padding: EdgeInsets.fromLTRB(210, 400, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/kulaiJaya.png'),
-                width: 100,
-                height: 100,
-              ),
+              child: moreDetailsButton('assets/images/kulaiJaya.png', 'Kulai Jaya')
             ),
             Container(
               padding: EdgeInsets.fromLTRB(240, 460, 0, 0),
-              child: Image(
-                image: AssetImage('assets/images/johorBahru.png'),
-                width: 100,
-                height: 100,
-              ),
+              child: moreDetailsButton('assets/images/johorBahru.png', 'Johor Bahru')
             ),
           ],
         ),
       ),
     );
   }
+
+  Widget moreDetailsButton(String imageDir, String buttonTitle){
+    return Stack(
+      children: [
+        Image(
+          image: AssetImage(imageDir),
+          height: 100,
+          width: 100,
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(13, 43, 0, 0),
+          child: Text(
+            buttonTitle,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'Lucida',
+                fontSize: 10
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
 }
