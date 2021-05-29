@@ -36,7 +36,7 @@ class _kukupIslandInfoPageState extends State<kukupIslandInfoPage> {
           children: [
             Container(
               decoration: BoxDecoration(
-                  color: Colors.lightBlue[900],
+                  color: Color.fromARGB(255, 6, 45, 86),
                   image: DecorationImage(
                       image: AssetImage('assets/images/ps9.png'),
                       fit: BoxFit.cover

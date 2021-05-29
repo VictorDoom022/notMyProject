@@ -37,7 +37,7 @@ class _districtPageState extends State<districtPage> {
           children: [
             Container(
               decoration: BoxDecoration(
-                  color: Colors.lightBlue[900],
+                  color: Color.fromARGB(255, 6, 45, 86),
                   image: DecorationImage(
                     image: AssetImage('assets/images/negeries.png'),
                   )

@@ -33,7 +33,7 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
         ),
       ),
       body: Container(
-        color: Colors.lightBlue[900],
+        color: Color.fromARGB(255, 6, 45, 86),
         child: GridView.count(
           crossAxisCount: 2,
           children: [

@@ -41,7 +41,7 @@ class _pontianInfoState extends State<pontianInfo> {
           ),
         ),
       body: Container(
-        color: Colors.lightBlue[900],
+        color: Color.fromARGB(255, 6, 45, 86),
         child: GridView.count(
           shrinkWrap: true,
           crossAxisCount: 2,
