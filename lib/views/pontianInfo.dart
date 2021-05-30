@@ -58,10 +58,13 @@ class _pontianInfoState extends State<pontianInfo> {
               child: Stack(
                 children: [
                   Positioned.fill(
-                      child: Image(
-                        image: AssetImage('assets/images/ps1.png'),
-                        fit: BoxFit.fill,
-                    )
+                      child: ColorFiltered(
+                        colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+                        child: Image(
+                          image: AssetImage('assets/images/ps1.png'),
+                          fit: BoxFit.fill,
+                    ),
+                      )
                   ),
                   Center(
                       child: Column(
@@ -86,10 +89,13 @@ class _pontianInfoState extends State<pontianInfo> {
                 fit: StackFit.expand,
                 children: [
                   Positioned.fill(
-                      child: Image(
-                      image: AssetImage('assets/images/ps4.png'),
-                      fit: BoxFit.fill,
-                    )
+                      child: ColorFiltered(
+                        colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+                        child: Image(
+                        image: AssetImage('assets/images/ps4.png'),
+                        fit: BoxFit.fill,
+                    ),
+                      )
                   ),
                   Center(
                       child: Column(
@@ -113,9 +119,12 @@ class _pontianInfoState extends State<pontianInfo> {
               child: Stack(
                 children: [
                   Positioned.fill(
-                      child: Image(
-                        image: AssetImage('assets/images/ps2.png'),
-                        fit: BoxFit.cover,
+                      child: ColorFiltered(
+                        colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+                        child: Image(
+                          image: AssetImage('assets/images/ps2.png'),
+                          fit: BoxFit.cover,
+                        ),
                       )
                   ),
                   Center(
@@ -140,9 +149,12 @@ class _pontianInfoState extends State<pontianInfo> {
               child: Stack(
                 children: [
                   Positioned.fill(
-                    child: Image(
-                      image: AssetImage('assets/images/ps3.png'),
-                      fit: BoxFit.fill,
+                    child: ColorFiltered(
+                      colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+                      child: Image(
+                        image: AssetImage('assets/images/ps3.png'),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                   Center(
@@ -176,9 +188,12 @@ class _pontianInfoState extends State<pontianInfo> {
                 child: Stack(
                   children: [
                     Positioned.fill(
-                      child: Image(
-                        image: AssetImage('assets/images/ps5.png'),
-                        fit: BoxFit.fill,
+                      child: ColorFiltered(
+                        colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+                        child: Image(
+                          image: AssetImage('assets/images/ps5.png'),
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                     Center(
@@ -204,9 +219,12 @@ class _pontianInfoState extends State<pontianInfo> {
               child: Stack(
                 children: [
                   Positioned.fill(
-                    child: Image(
-                      image: AssetImage('assets/images/ps6.png'),
-                      fit: BoxFit.fill,
+                    child: ColorFiltered(
+                      colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+                      child: Image(
+                        image: AssetImage('assets/images/ps6.png'),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                   Center(
