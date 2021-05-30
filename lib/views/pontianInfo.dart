@@ -18,6 +18,13 @@ class _pontianInfoState extends State<pontianInfo> {
 
   @override
   Widget build(BuildContext context) {
+
+    var size = MediaQuery.of(context).size;
+
+    /*24 is for notification bar on Android*/
+    final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
+    final double itemWidth = size.width / 2;
+
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.blue[800],
@@ -43,6 +50,7 @@ class _pontianInfoState extends State<pontianInfo> {
       body: Container(
         color: Color.fromARGB(255, 6, 45, 86),
         child: GridView.count(
+          childAspectRatio: (itemWidth / itemHeight),
           shrinkWrap: true,
           crossAxisCount: 2,
           children: [
