@@ -32,6 +32,12 @@ class _welcomePageState extends State<welcomePage> {
       )
   );
 
+  TextStyle logoTextStyle = TextStyle(
+      color: Colors.white,
+      fontSize: 50,
+      fontFamily: 'Aharoni'
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,13 +52,23 @@ class _welcomePageState extends State<welcomePage> {
                 width: 200,
                 height: 200,
               ),
-              Text(
-                  'Johor Journey',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 50,
-                  fontFamily: 'Aharoni'
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                      'Johor J',
+                    style: logoTextStyle,
+                  ),
+                  Image(
+                    image: AssetImage('assets/images/globeIcon.jpeg'),
+                    width: 40,
+                  ),
+                  Text(
+                    'urney',
+                    style: logoTextStyle,
+                  ),
+                ],
               ),
               SizedBox(height: 50),
               ElevatedButton(
