@@ -61,7 +61,7 @@ class _welcomePageState extends State<welcomePage> {
                     style: logoTextStyle,
                   ),
                   Image(
-                    image: AssetImage('assets/images/globeIcon.jpeg'),
+                    image: AssetImage('assets/images/globeIcon.png'),
                     width: 40,
                   ),
                   Text(
