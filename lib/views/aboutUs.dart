@@ -51,7 +51,7 @@ class _aboutUsState extends State<aboutUs> {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
-                            'About US',
+                            'About Us',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 30,

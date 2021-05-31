@@ -12,6 +12,7 @@ class _districtPageState extends State<districtPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           backgroundColor: Colors.blue[800],
           leading: IconButton(
             icon: Icon(Icons.keyboard_arrow_left),

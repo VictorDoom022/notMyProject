@@ -27,6 +27,7 @@ class _pontianInfoState extends State<pontianInfo> {
 
     return Scaffold(
       appBar: AppBar(
+          centerTitle: true,
           backgroundColor: Colors.blue[800],
           leading: IconButton(
             icon: Icon(Icons.keyboard_arrow_left),
@@ -205,7 +206,7 @@ class _pontianInfoState extends State<pontianInfo> {
                               height: 80,
                             ),
                             Text(
-                              'Lesisure',
+                              'Leisure',
                               style: gridTextStyle,
                             ),
                           ],
