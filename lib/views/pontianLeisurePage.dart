@@ -27,7 +27,7 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
         title: Text(
           'PONTIAN > LEISURE',
           style: TextStyle(
-              fontFamily: 'Georgia',
+              fontFamily: 'openSans',
               fontSize: 20
           ),
         ),

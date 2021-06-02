@@ -27,7 +27,7 @@ class _pontianRestaurantPageState extends State<pontianRestaurantPage> {
         title: Text(
           'PONTIAN > RESTAURANT',
           style: TextStyle(
-              fontFamily: 'Georgia',
+              fontFamily: 'openSans',
               fontSize: 20
           ),
         ),

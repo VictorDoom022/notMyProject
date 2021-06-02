@@ -46,7 +46,7 @@ class _batuPahatInfoState extends State<batuPahatInfo> {
           title: Text(
             'Batu Pahat',
             style: TextStyle(
-                fontFamily: 'Georgia',
+                fontFamily: 'openSans',
                 fontSize: 20
             ),
           ),

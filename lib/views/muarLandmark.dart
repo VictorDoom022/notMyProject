@@ -28,7 +28,7 @@ class _muarLandMarkPageState extends State<muarLandMarkPage> {
         title: Text(
           'Muar > Landmark',
           style: TextStyle(
-              fontFamily: 'Georgia',
+              fontFamily: 'openSans',
               fontSize: 20
           ),
         ),

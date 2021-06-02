@@ -32,7 +32,7 @@ class _districtPageState extends State<districtPage> {
           title: Text(
               'DISTRICT',
               style: TextStyle(
-                fontFamily: 'Georgia',
+                fontFamily: 'openSans',
                 fontSize: 20
               ),
           ),

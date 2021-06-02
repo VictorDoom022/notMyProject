@@ -44,7 +44,7 @@ class _pontianInfoState extends State<pontianInfo> {
           title: Text(
             'PONTIAN',
             style: TextStyle(
-                fontFamily: 'Georgia',
+                fontFamily: 'openSans',
                 fontSize: 20
             ),
           ),

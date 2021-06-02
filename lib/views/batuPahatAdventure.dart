@@ -28,7 +28,7 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
         title: Text(
           'Batu Pahat > Adventure',
           style: TextStyle(
-              fontFamily: 'Georgia',
+              fontFamily: 'openSans',
               fontSize: 20
           ),
         ),

@@ -28,7 +28,7 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
         title: Text(
           'Johor Bahru > Theme Park',
           style: TextStyle(
-              fontFamily: 'Georgia',
+              fontFamily: 'openSans',
               fontSize: 20
           ),
         ),

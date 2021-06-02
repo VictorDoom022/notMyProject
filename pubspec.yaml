@@ -73,7 +73,16 @@ flutter:
    - family: Gothic
      fonts:
        - asset: assets/fonts/GOTHIC.ttf
-
+   - family: openSans
+     fonts:
+       - asset: assets/fonts/OpenSans-Bold.ttf
+       - asset: assets/fonts/OpenSans-BoldItalic.ttf
+       - asset: assets/fonts/OpenSans-ExtraBold.ttf
+       - asset: assets/fonts/OpenSans-Italic.ttf
+       - asset: assets/fonts/OpenSans-Light.ttf
+       - asset: assets/fonts/OpenSans-Regular.ttf
+       - asset: assets/fonts/OpenSans-LightItalic.ttf
+       - asset: assets/fonts/OpenSans-SemiBold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

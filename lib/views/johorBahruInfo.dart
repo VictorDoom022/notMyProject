@@ -45,7 +45,7 @@ class _johorBahruInfoState extends State<johorBahruInfo> {
           title: Text(
             'Johor Bahru',
             style: TextStyle(
-                fontFamily: 'Georgia',
+                fontFamily: 'openSans',
                 fontSize: 20
             ),
           ),
