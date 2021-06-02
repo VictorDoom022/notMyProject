@@ -56,10 +56,10 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                       fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Text(
                     'Theme park focusing on the construction toy system Lego',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                     style: TextStyle(
                       fontSize: 18,
                       color: Colors.white
@@ -98,10 +98,10 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                         fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Text(
                     'Largest recreational park in the city of Johor Bahru',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.right,
                     style: TextStyle(
                         fontSize: 18,
                         color: Colors.white

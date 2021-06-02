@@ -56,10 +56,10 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
                       fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Text(
                     'It is famous and have been made into song and appeared in movies',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                     style: TextStyle(
                       fontSize: 18,
                       color: Colors.white
@@ -98,10 +98,10 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
                         fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Text(
                     'Features beautiful wildflowers for hiking.',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 18,
                         color: Colors.white

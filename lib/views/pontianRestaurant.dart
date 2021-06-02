@@ -50,17 +50,17 @@ class _pontianRestaurantPageState extends State<pontianRestaurantPage> {
                   Text(
                       'Pontian Rooftop Restaurant',
                     style: TextStyle(
-                      fontSize: 25,
+                      fontSize: 23,
                       color: Colors.white,
                       fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Text(
                     'Enjoy the food above roof top fronting the sea',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 15,
                       color: Colors.white
                     ),
                   ),
@@ -97,10 +97,10 @@ class _pontianRestaurantPageState extends State<pontianRestaurantPage> {
                         fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Text(
                     'Hidden treasure',
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.right,
                     style: TextStyle(
                         fontSize: 18,
                         color: Colors.white
