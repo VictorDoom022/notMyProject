@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notmyproject/views/muarInfo.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 import 'package:notmyproject/views/welcomePage.dart';
 
@@ -54,9 +55,19 @@ class _districtPageState extends State<districtPage> {
               padding: EdgeInsets.fromLTRB(100, 215, 0, 0),
               child: moreDetailsButton('assets/images/ledang.png', 'Ledang')
             ),
-            Container(
-              padding: EdgeInsets.fromLTRB(20, 300, 0, 0),
-              child: moreDetailsButton('assets/images/muar.png', 'Muar')
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder:(context){
+                      return muarInfo();
+                    }
+                  )
+                );
+              },
+              child: Container(
+                padding: EdgeInsets.fromLTRB(20, 300, 0, 0),
+                child: moreDetailsButton('assets/images/muar.png', 'Muar')
+              ),
             ),
             Container(
               padding: EdgeInsets.fromLTRB(70, 370, 0, 0),
