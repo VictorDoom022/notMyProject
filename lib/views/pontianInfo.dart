@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notmyproject/views/districtPage.dart';
 import 'package:notmyproject/views/pontianLeisurePage.dart';
+import 'package:notmyproject/views/pontianRestaurant.dart';
 
 class pontianInfo extends StatefulWidget {
   @override
@@ -55,34 +56,44 @@ class _pontianInfoState extends State<pontianInfo> {
           shrinkWrap: true,
           crossAxisCount: 2,
           children: [
-            Container(
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                      child: ColorFiltered(
-                        colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
-                        child: Image(
-                          image: AssetImage('assets/images/ps1.png'),
-                          fit: BoxFit.fill,
+            GestureDetector(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                builder:(context){
+                    return pontianRestaurantPage();
+                  }
+                )
+              );
+            },
+            child: Container(
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                        child: ColorFiltered(
+                          colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+                          child: Image(
+                            image: AssetImage('assets/images/ps1.png'),
+                            fit: BoxFit.fill,
+                      ),
+                        )
                     ),
-                      )
-                  ),
-                  Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image(
-                            image: AssetImage('assets/images/restaurantIcon.png'),
-                            height: 80,
-                          ),
-                          Text(
-                              'Restaurant',
-                            style: gridTextStyle,
-                          ),
-                        ],
-                      )
-                  )
-                ],
+                    Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage('assets/images/restaurantIcon.png'),
+                              height: 80,
+                            ),
+                            Text(
+                                'Restaurant',
+                              style: gridTextStyle,
+                            ),
+                          ],
+                        )
+                    )
+                  ],
+                ),
               ),
             ),
             Container(
