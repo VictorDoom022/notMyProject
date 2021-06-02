@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 import 'package:notmyproject/views/welcomePage.dart';
 
+import 'johorBahruInfo.dart';
+
 class districtPage extends StatefulWidget {
   @override
   _districtPageState createState() => _districtPageState();
@@ -90,9 +92,19 @@ class _districtPageState extends State<districtPage> {
               padding: EdgeInsets.fromLTRB(210, 400, 0, 0),
               child: moreDetailsButton('assets/images/kulaiJaya.png', 'Kulai Jaya')
             ),
-            Container(
-              padding: EdgeInsets.fromLTRB(240, 460, 0, 0),
-              child: moreDetailsButton('assets/images/johorBahru.png', 'Johor Bahru')
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(
+                    builder:(context){
+                      return johorBahruInfo();
+                    }
+                  )
+                );
+              },
+              child: Container(
+                padding: EdgeInsets.fromLTRB(240, 460, 0, 0),
+                child: moreDetailsButton('assets/images/johorBahru.png', 'Johor Bahru')
+              ),
             ),
           ],
         ),
