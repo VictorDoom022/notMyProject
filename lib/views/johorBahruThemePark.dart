@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notmyproject/views/johorBahruInfo.dart';
 import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 
@@ -18,7 +19,7 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
           onPressed: (){
             Navigator.push(context, MaterialPageRoute(
                 builder:(context){
-                  return pontianInfo();
+                  return johorBahruInfo();
                 }
             )
             );
