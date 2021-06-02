@@ -44,7 +44,7 @@ class _batuPahatInfoState extends State<batuPahatInfo> {
             },
           ),
           title: Text(
-            'Batu Pahat',
+            'BATU PAHAT',
             style: TextStyle(
                 fontFamily: 'openSans',
                 fontSize: 20

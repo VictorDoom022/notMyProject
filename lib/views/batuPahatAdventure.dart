@@ -26,7 +26,7 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
           },
         ),
         title: Text(
-          'Batu Pahat > Adventure',
+          'BATU PAHAT > ADVENTURE',
           style: TextStyle(
               fontFamily: 'openSans',
               fontSize: 20
@@ -57,12 +57,15 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
                     ),
                   ),
                   SizedBox(height: 15),
-                  Text(
-                    'It is famous and have been made into song and appeared in movies',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+                    child: Text(
+                      'It is famous and have been made into song and appeared in movies',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white
+                      ),
                     ),
                   ),
                   GestureDetector(
@@ -99,12 +102,15 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
                     ),
                   ),
                   SizedBox(height: 15),
-                  Text(
-                    'Features beautiful wildflowers for hiking.',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+                    child: Text(
+                      'Features beautiful wildflowers for hiking',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white
+                      ),
                     ),
                   ),
                   moreDetailsButton('assets/images/moreDetails.png', 'More details'),

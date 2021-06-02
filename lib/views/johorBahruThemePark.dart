@@ -26,7 +26,7 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
           },
         ),
         title: Text(
-          'Johor Bahru > Theme Park',
+          'JOHOR BAHRU > THEME PARK',
           style: TextStyle(
               fontFamily: 'openSans',
               fontSize: 20
@@ -57,12 +57,15 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                     ),
                   ),
                   SizedBox(height: 15),
-                  Text(
-                    'Theme park focusing on the construction toy system Lego',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+                    child: Text(
+                      'Theme park focusing on the construction toy system Lego',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white
+                      ),
                     ),
                   ),
                   GestureDetector(
@@ -99,12 +102,15 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                     ),
                   ),
                   SizedBox(height: 15),
-                  Text(
-                    'Largest recreational park in the city of Johor Bahru',
-                    textAlign: TextAlign.right,
-                    style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+                    child: Text(
+                      'Largest recreational park in the city of Johor Bahru',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white
+                      ),
                     ),
                   ),
                   moreDetailsButton('assets/images/moreDetails.png', 'More details'),

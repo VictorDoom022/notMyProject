@@ -24,7 +24,7 @@ class _kukupIslandInfoPageState extends State<kukupIslandInfoPage> {
           },
         ),
         title: Text(
-          'PONTIAN > LEISURE > Kukup Island',
+          'PONTIAN > LEISURE > KUKUP ISLAND',
           style: TextStyle(
               fontFamily: 'openSans',
               fontSize: 20

@@ -44,7 +44,7 @@ class _muarInfoState extends State<muarInfo> {
             },
           ),
           title: Text(
-            'Muar',
+            'MUAR',
             style: TextStyle(
                 fontFamily: 'openSans',
                 fontSize: 20
