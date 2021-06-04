@@ -37,9 +37,6 @@ class _arTestState extends State<arTest> {
     _addSixthImage(arCoreController);
     _addSeventhImage(arCoreController);
     _addEigthImage(arCoreController);
-    // _addSphere(arCoreController);
-    // _addCylindre(arCoreController);
-    // _addCube(arCoreController);
   }
 
   void _addImage(ArCoreController controller) async {
@@ -150,53 +147,6 @@ class _arTestState extends State<arTest> {
     final node = ArCoreNode(
       image: image,
       position: vector.Vector3(1.5, 1.5, -3.3),
-    );
-    controller.addArCoreNode(node);
-  }
-
-  void _addSphere(ArCoreController controller) {
-    final material = ArCoreMaterial(
-        color: Color.fromARGB(120, 66, 134, 244));
-    final sphere = ArCoreSphere(
-      materials: [material],
-      radius: 0.1,
-    );
-    final node = ArCoreNode(
-      shape: sphere,
-      position: vector.Vector3(0, 0, -1.5),
-    );
-    controller.addArCoreNode(node);
-  }
-
-  void _addCylindre(ArCoreController controller) {
-    final material = ArCoreMaterial(
-      color: Colors.red,
-      reflectance: 1.0,
-    );
-    final cylindre = ArCoreCylinder(
-      materials: [material],
-      radius: 0.5,
-      height: 0.3,
-    );
-    final node = ArCoreNode(
-      shape: cylindre,
-      position: vector.Vector3(0.0, -0.5, -2.0),
-    );
-    controller.addArCoreNode(node);
-  }
-
-  void _addCube(ArCoreController controller) {
-    final material = ArCoreMaterial(
-      color: Color.fromARGB(120, 66, 134, 244),
-      metallic: 1.0,
-    );
-    final cube = ArCoreCube(
-      materials: [material],
-      size: vector.Vector3(0.5, 0.5, 0.5),
-    );
-    final node = ArCoreNode(
-      shape: cube,
-      position: vector.Vector3(-0.5, 0.5, -3.5),
     );
     controller.addArCoreNode(node);
   }
