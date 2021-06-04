@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notmyproject/views/ARStuffs/kukupAR.dart';
 import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 
@@ -68,7 +69,7 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
-                              return kukupIslandInfoPage();
+                              return kukupAR();
                             }
                           )
                         );
