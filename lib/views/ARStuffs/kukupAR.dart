@@ -29,6 +29,7 @@ class _kukupARState extends State<kukupAR> {
   void _onArCoreViewCreated(ArCoreController controller) {
     arCoreController = controller;
 
+    _addImageLogo(arCoreController);
     _addImage(arCoreController);
     _addSecondImage(arCoreController);
     _addThirdImage(arCoreController);
@@ -37,6 +38,20 @@ class _kukupARState extends State<kukupAR> {
     _addSixthImage(arCoreController);
     _addSeventhImage(arCoreController);
     _addEigthImage(arCoreController);
+  }
+
+  void _addImageLogo(ArCoreController controller) async {
+    Uint8List data = (await rootBundle.load('assets/images/kukup/kukupLogo.jpeg')).buffer.asUint8List();
+    final image = ArCoreImage(
+        bytes: data,
+        width: 400,
+        height: 100
+    );
+    final node = ArCoreNode(
+      image: image,
+      position: vector.Vector3(0, 0, -1.5),
+    );
+    controller.addArCoreNode(node);
   }
 
   void _addImage(ArCoreController controller) async {
