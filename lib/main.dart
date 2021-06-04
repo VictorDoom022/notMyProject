@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notmyproject/views/ARStuffs/arTest.dart';
+import 'package:notmyproject/views/ARStuffs/kukupAR.dart';
 import 'package:notmyproject/views/welcomePage.dart';
 
 void main() {
@@ -9,7 +9,7 @@ void main() {
       initialRoute: '/arTest',
       routes: {
         '/':(context) => welcomePage(),
-        '/arTest':(context) => arTest()
+        '/arTest':(context) => kukupAR()
       },
     )
   );

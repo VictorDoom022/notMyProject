@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:vector_math/vector_math_64.dart' as vector;
 
-class arTest extends StatefulWidget {
+class kukupAR extends StatefulWidget {
   @override
-  _arTestState createState() => _arTestState();
+  _kukupARState createState() => _kukupARState();
 }
 
-class _arTestState extends State<arTest> {
+class _kukupARState extends State<kukupAR> {
   ArCoreController arCoreController;
 
   @override
