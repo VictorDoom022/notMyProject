@@ -6,7 +6,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/arTest',
+      initialRoute: '/',
       routes: {
         '/':(context) => welcomePage(),
         '/arTest':(context) => kukupAR()

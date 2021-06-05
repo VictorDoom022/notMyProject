@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notmyproject/views/ARStuffs/kukupAR.dart';
+import 'package:notmyproject/views/ARStuffs/locationAR.dart';
 import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 
@@ -69,7 +70,18 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
-                              return kukupAR();
+                              return locationAR(
+                                appBatTitle: 'PONTIAN > LEISURE > KUKUP ISLAND',
+                                imageDescImageSrc: 'assets/images/kukup/kukupLogo.jpeg',
+                                firstImageSrc: 'assets/images/kukup/bridge new.jpg',
+                                secImageSrc: 'assets/images/kukup/kukup tree.jpg',
+                                thirdtImageSrc: 'assets/images/kukup/kukup scene.jpg',
+                                fourthImageSrc: 'assets/images/kukup/kukup scene 1.jpg',
+                                fifthImageSrc: 'assets/images/kukup/kukup scene 2.jpg',
+                                sixthImageSrc: 'assets/images/kukup/kukup taman.jpg',
+                                seventhImageSrc: 'assets/images/kukup/kukup view.jpg',
+                                eightImageSrc: 'assets/images/kukup/monkey.jpg',
+                              );
                             }
                           )
                         );
