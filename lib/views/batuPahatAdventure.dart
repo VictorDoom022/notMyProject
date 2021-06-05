@@ -126,7 +126,28 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
                       ),
                     ),
                   ),
-                  moreDetailsButton('assets/images/moreDetails.png', 'More details'),
+                  GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(
+                            builder:(context){
+                              return locationAR(
+                                appBatTitle: 'BATU PAHAT > ADVENTURE > GUNUNG PAYUNG',
+                                imageDescImageSrc: 'assets/images/bukitpayung/bukitpayunglocation.JPG',
+                                firstImageSrc: 'assets/images/bukitpayung/bukitpayung1.jpg',
+                                secImageSrc: 'assets/images/bukitpayung/bukitpayung2.jpg',
+                                thirdtImageSrc: 'assets/images/bukitpayung/bukit payung3.jpg',
+                                fourthImageSrc: 'assets/images/bukitpayung/bukit payung4.jpg',
+                                fifthImageSrc: 'assets/images/bukitpayung/bukit payung5.jpg',
+                                sixthImageSrc: 'assets/images/bukitpayung/bukit payung6.jpg',
+                                seventhImageSrc: 'assets/images/bukitpayung/bukit payung7.jpg',
+                                eightImageSrc: 'assets/images/bukitpayung/bukit payung8.jpg',
+                              );
+                            }
+                        )
+                        );
+                      },
+                      child: moreDetailsButton('assets/images/moreDetails.png', 'More details')
+                  ),
                 ],
               ),
 
