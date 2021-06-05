@@ -119,7 +119,28 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                         color: Colors.white
                     ),
                   ),
-                  moreDetailsButton('assets/images/moreDetails.png', 'More details'),
+                  GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(
+                            builder:(context){
+                          return locationAR(
+                            appBatTitle: 'PONTIAN > LEISURE > KUKUP ISLAND',
+                            imageDescImageSrc: 'assets/images/tanjungPiai/location tanjung piai.JPG',
+                            firstImageSrc: 'assets/images/tanjungPiai/Tanjung-Piai 1.jpg',
+                            secImageSrc: 'assets/images/tanjungPiai/tanjung piai 2.jpg',
+                            thirdtImageSrc: 'assets/images/tanjungPiai/tanjung piai3.jpg',
+                            fourthImageSrc: 'assets/images/tanjungPiai/tanjung piai 4.jpg',
+                            fifthImageSrc: 'assets/images/tanjungPiai/tanjung piai 5.jpg',
+                            sixthImageSrc: 'assets/images/tanjungPiai/tanjung piai 6.jpg',
+                            seventhImageSrc: 'assets/images/tanjungPiai/tanjung piai 7.jpg',
+                            eightImageSrc: 'assets/images/tanjungPiai/tanjung piai 8.jpg',
+                          );
+                        }
+                        )
+                        );
+                      },
+                      child: moreDetailsButton('assets/images/moreDetails.png', 'More details')
+                  ),
                 ],
               ),
 
