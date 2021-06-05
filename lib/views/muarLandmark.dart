@@ -3,6 +3,8 @@ import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 import 'package:notmyproject/views/muarInfo.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
 
+import 'ARStuffs/locationAR.dart';
+
 class muarLandMarkPage extends StatefulWidget {
   @override
   _muarLandMarkPageState createState() => _muarLandMarkPageState();
@@ -70,9 +72,20 @@ class _muarLandMarkPageState extends State<muarLandMarkPage> {
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
-                              return kukupIslandInfoPage();
+                              return locationAR(
+                                appBatTitle: 'MUAR > LANDMARK > Muar City Landmark',
+                                imageDescImageSrc: 'assets/images/muarlandmark/muarlandmark location.JPG',
+                                firstImageSrc: 'assets/images/muarlandmark/muarlandmark.jpg',
+                                secImageSrc: 'assets/images/muarlandmark/muarlandmark1.jpg',
+                                thirdtImageSrc: 'assets/images/muarlandmark/muarlandmark2.jpg',
+                                fourthImageSrc: 'assets/images/muarlandmark/landmark4.JPG',
+                                fifthImageSrc: 'assets/images/muarlandmark/landmark5.jpg',
+                                sixthImageSrc: 'assets/images/muarlandmark/landmark6.jpg',
+                                seventhImageSrc: 'assets/images/muarlandmark/landmark7.jpg',
+                                eightImageSrc: 'assets/images/muarlandmark/landmark8.jpg',
+                              );
                             }
-                          )
+                        )
                         );
                       },
                       child: moreDetailsButton('assets/images/moreDetails.png', 'More details')
