@@ -46,7 +46,19 @@ class _locationpARState extends State<locationAR> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue[800],
-        title: Text(appBatTitle),
+        leading: IconButton(
+          icon: Icon(Icons.keyboard_arrow_left),
+          onPressed: (){
+            Navigator.of(context).pop();
+          },
+        ),
+        title: Text(
+            appBatTitle,
+          style: TextStyle(
+              fontFamily: 'openSans',
+              fontSize: 20
+          ),
+        ),
       ),
       body: ArCoreView(
         onArCoreViewCreated: _onArCoreViewCreated,
