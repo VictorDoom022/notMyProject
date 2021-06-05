@@ -58,14 +58,14 @@ class _locationpARState extends State<locationAR> {
     arCoreController = controller;
 
     _addImageLogo(arCoreController);
-    _addImage(arCoreController);
-    _addSecondImage(arCoreController);
-    _addThirdImage(arCoreController);
-    _addFourthImage(arCoreController);
-    _addFifthImage(arCoreController);
-    _addSixthImage(arCoreController);
-    _addSeventhImage(arCoreController);
-    _addEigthImage(arCoreController);
+    _addImage(arCoreController, vector.Vector3(0, -2, -3.5));
+    _addSecondImage(arCoreController, vector.Vector3(1.5, -2, -3.3));
+    _addThirdImage(arCoreController, vector.Vector3(3.0, -2, -3.3));
+    _addFourthImage(arCoreController, vector.Vector3(4.5, -2, -3.3));
+    _addFifthImage(arCoreController, vector.Vector3(-1.5, -2, -3.3));
+    _addSixthImage(arCoreController, vector.Vector3(-3.0, -2, -3.3));
+    _addSeventhImage(arCoreController, vector.Vector3(0, 1.5, -3.3));
+    _addEigthImage(arCoreController, vector.Vector3(1.5, 1.5, -3.3));
   }
 
   void _addImageLogo(ArCoreController controller) async {
@@ -82,7 +82,7 @@ class _locationpARState extends State<locationAR> {
     controller.addArCoreNode(node);
   }
 
-  void _addImage(ArCoreController controller) async {
+  void _addImage(ArCoreController controller, vector.Vector3 imageVector) async {
     Uint8List data = (await rootBundle.load(firstImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -91,12 +91,12 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(0, -2, -3.5),
+      position: imageVector,
     );
     controller.addArCoreNode(node);
   }
 
-  void _addSecondImage(ArCoreController controller) async {
+  void _addSecondImage(ArCoreController controller, vector.Vector3 secImageVector) async {
     Uint8List data = (await rootBundle.load(secImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -105,12 +105,12 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(1.5, -2, -3.3),
+      position: secImageVector,
     );
     controller.addArCoreNode(node);
   }
 
-  void _addThirdImage(ArCoreController controller) async {
+  void _addThirdImage(ArCoreController controller, vector.Vector3 thirdImageVector) async {
     Uint8List data = (await rootBundle.load(thirdtImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -119,12 +119,12 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(3.0, -2, -3.3),
+      position: thirdImageVector,
     );
     controller.addArCoreNode(node);
   }
 
-  void _addFourthImage(ArCoreController controller) async {
+  void _addFourthImage(ArCoreController controller, vector.Vector3 fourthImageVector) async {
     Uint8List data = (await rootBundle.load(fourthImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -133,12 +133,12 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(4.5, -2, -3.3),
+      position: fourthImageVector,
     );
     controller.addArCoreNode(node);
   }
 
-  void _addFifthImage(ArCoreController controller) async {
+  void _addFifthImage(ArCoreController controller, vector.Vector3 fifthImageVector) async {
     Uint8List data = (await rootBundle.load(fifthImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -147,12 +147,12 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(-1.5, -2, -3.3),
+      position: fifthImageVector,
     );
     controller.addArCoreNode(node);
   }
 
-  void _addSixthImage(ArCoreController controller) async {
+  void _addSixthImage(ArCoreController controller, vector.Vector3 sixthImageVector) async {
     Uint8List data = (await rootBundle.load(sixthImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -161,12 +161,12 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(-3.0, -2, -3.3),
+      position: sixthImageVector,
     );
     controller.addArCoreNode(node);
   }
 
-  void _addSeventhImage(ArCoreController controller) async {
+  void _addSeventhImage(ArCoreController controller, vector.Vector3 seventhImageVector) async {
     Uint8List data = (await rootBundle.load(seventhImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -175,12 +175,12 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(0, 1.5, -3.3),
+      position: seventhImageVector,
     );
     controller.addArCoreNode(node);
   }
 
-  void _addEigthImage(ArCoreController controller) async {
+  void _addEigthImage(ArCoreController controller, vector.Vector3 eigthImageVector) async {
     Uint8List data = (await rootBundle.load(eightImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
@@ -189,7 +189,7 @@ class _locationpARState extends State<locationAR> {
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(1.5, 1.5, -3.3),
+      position: eigthImageVector,
     );
     controller.addArCoreNode(node);
   }
