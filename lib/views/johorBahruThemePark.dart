@@ -125,7 +125,28 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                       ),
                     ),
                   ),
-                  moreDetailsButton('assets/images/moreDetails.png', 'More details'),
+                  GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(
+                            builder:(context){
+                              return locationAR(
+                                appBatTitle: 'JOHOR BAHRU > THEME PARK > DANGA BAY',
+                                imageDescImageSrc: 'assets/images/dangaBay/danga bay location.JPG',
+                                firstImageSrc: 'assets/images/dangaBay/danga bay 1.jpg',
+                                secImageSrc: 'assets/images/dangaBay/danga bay 2.jpg',
+                                thirdtImageSrc: 'assets/images/dangaBay/danga bay 3.jpg',
+                                fourthImageSrc: 'assets/images/dangaBay/danga bay 4.jpg',
+                                fifthImageSrc: 'assets/images/dangaBay/danga bay 5.jpg',
+                                sixthImageSrc: 'assets/images/dangaBay/danga.jpg',
+                                seventhImageSrc: 'assets/images/dangaBay/danga bay 7.jpg',
+                                eightImageSrc: 'assets/images/dangaBay/danga bay 8.jpg',
+                              );
+                            }
+                        )
+                        );
+                      },
+                      child: moreDetailsButton('assets/images/moreDetails.png', 'More details')
+                  ),
                 ],
               ),
 
