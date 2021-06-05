@@ -124,7 +124,7 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
                           return locationAR(
-                            appBatTitle: 'PONTIAN > LEISURE > KUKUP ISLAND',
+                            appBatTitle: 'PONTIAN > LEISURE > TANJUNG PIAI',
                             imageDescImageSrc: 'assets/images/tanjungPiai/location tanjung piai.JPG',
                             firstImageSrc: 'assets/images/tanjungPiai/Tanjung-Piai 1.jpg',
                             secImageSrc: 'assets/images/tanjungPiai/tanjung piai 2.jpg',

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notmyproject/views/ARStuffs/locationAR.dart';
 import 'package:notmyproject/views/johorBahruInfo.dart';
 import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
@@ -72,9 +73,20 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
-                              return kukupIslandInfoPage();
+                              return locationAR(
+                                appBatTitle: 'JOHOR BAHRU > THEME PARK > LEGOLAND',
+                                imageDescImageSrc: 'assets/images/legoland/legoland location.JPG',
+                                firstImageSrc: 'assets/images/legoland/legoland1.jpg',
+                                secImageSrc: 'assets/images/legoland/legoland2.jpg',
+                                thirdtImageSrc: 'assets/images/legoland/legoland3.jpg',
+                                fourthImageSrc: 'assets/images/legoland/legoland4.jpg',
+                                fifthImageSrc: 'assets/images/legoland/legoland5.jpg',
+                                sixthImageSrc: 'assets/images/legoland/legoland6.jpg',
+                                seventhImageSrc: 'assets/images/legoland/legoland 7.jpg',
+                                eightImageSrc: 'assets/images/legoland/legoland8.jpg',
+                              );
                             }
-                          )
+                        )
                         );
                       },
                       child: moreDetailsButton('assets/images/moreDetails.png', 'More details')
