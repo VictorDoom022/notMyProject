@@ -58,26 +58,26 @@ class _locationpARState extends State<locationAR> {
     arCoreController = controller;
 
     _addImageLogo(arCoreController);
-    _addImage(arCoreController, vector.Vector3(0, -2, -3.5));
-    _addSecondImage(arCoreController, vector.Vector3(1.5, -2, -3.3));
-    _addThirdImage(arCoreController, vector.Vector3(3.0, -2, -3.3));
-    _addFourthImage(arCoreController, vector.Vector3(4.5, -2, -3.3));
-    _addFifthImage(arCoreController, vector.Vector3(-1.5, -2, -3.3));
-    _addSixthImage(arCoreController, vector.Vector3(-3.0, -2, -3.3));
-    _addSeventhImage(arCoreController, vector.Vector3(0, 1.5, -3.3));
-    _addEigthImage(arCoreController, vector.Vector3(1.5, 1.5, -3.3));
+    _addImage(arCoreController, vector.Vector3(0, -2, -7.0));
+    _addSecondImage(arCoreController, vector.Vector3(1.5, -2, -7.0));
+    _addThirdImage(arCoreController, vector.Vector3(3.0, -2, -7.0));
+    _addFifthImage(arCoreController, vector.Vector3(-1.5, -2, -7.0));
+    _addFourthImage(arCoreController, vector.Vector3(3.0, 2.5, -7.0));//
+    _addSixthImage(arCoreController, vector.Vector3(-1.5, 2.5, -7.0));//
+    _addSeventhImage(arCoreController, vector.Vector3(0, 2.5, -7.0));//
+    _addEigthImage(arCoreController, vector.Vector3(1.5, 2.5, -7.0));//
   }
 
   void _addImageLogo(ArCoreController controller) async {
     Uint8List data = (await rootBundle.load(imageDescImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
-        width: 400,
-        height: 100
+        width: 450,
+        height: 150
     );
     final node = ArCoreNode(
       image: image,
-      position: vector.Vector3(0, 0, -1.5),
+      position: vector.Vector3(0, 0.8, -3.5),
     );
     controller.addArCoreNode(node);
   }
