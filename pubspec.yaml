@@ -53,6 +53,7 @@ flutter:
     - assets/images/legoland/
     - assets/images/dangaBay/
     - assets/images/muarlandmark/
+    - assets/images/gunungBanang/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
