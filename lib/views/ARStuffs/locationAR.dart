@@ -70,13 +70,13 @@ class _locationpARState extends State<locationAR> {
     arCoreController = controller;
     //rotate vector4 0, -10, 0, 2
     _addImageLogo(arCoreController);
-    _addSeventhImage(arCoreController, vector.Vector3(-4.5, -2, -2.0), vector.Vector4(0, -50, 0, 40)); //left
+    _addSeventhImage(arCoreController, vector.Vector3(-4.5, -2, -2.0), vector.Vector4(0, -50, 0, 25)); //left
     _addSixthImage(arCoreController, vector.Vector3(-3.0, -2, -3.5), vector.Vector4(0, -50, 0, 15));
     _addFifthImage(arCoreController, vector.Vector3(-1.5, -2, -5.0), vector.Vector4(0, -50, 0, 8));
-    _addImage(arCoreController, vector.Vector3(0, -2, -6.5), vector.Vector4(0,0,0,0)); //center
+    //_addImage(arCoreController, vector.Vector3(0, -2, -6.5), vector.Vector4(0,0,0,0)); //center
     _addSecondImage(arCoreController, vector.Vector3(1.5, -2, -5.0), vector.Vector4(0, 50, 0, 8));
     _addThirdImage(arCoreController, vector.Vector3(3.0, -2, -3.5), vector.Vector4(0, 50, 0, 15));
-    _addFourthImage(arCoreController, vector.Vector3(4.5, -2, -2.0), vector.Vector4(0, 50, 0, 40));
+    _addFourthImage(arCoreController, vector.Vector3(4.5, -2, -2.0), vector.Vector4(0, 50, 0, 25));
    // _addEigthImage(arCoreController, vector.Vector3(5.5, -2, -5.0), vector.Vector4(0, 40, 0, 12)); //right
   }
 
