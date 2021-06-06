@@ -99,7 +99,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
@@ -114,7 +114,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
@@ -129,7 +129,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
@@ -144,7 +144,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
@@ -159,7 +159,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
@@ -174,7 +174,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
@@ -189,7 +189,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
@@ -204,7 +204,7 @@ class _locationpARState extends State<locationAR> {
     final image = ArCoreImage(
         bytes: data,
         width: 900,
-        height: 2200
+        height: 1200
     );
     final node = ArCoreNode(
       image: image,
