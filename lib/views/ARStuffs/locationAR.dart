@@ -61,8 +61,20 @@ class _locationpARState extends State<locationAR> {
         ),
       ),
       body: ArCoreView(
+        enableTapRecognizer: true,
         onArCoreViewCreated: _onArCoreViewCreated,
       ),
+    );
+  }
+
+  Future<dynamic> showAlertDialog(String name){
+    return showDialog(
+        context: context,
+        builder: (context){
+          return Dialog(
+            child: Text('Some text' + name),
+          );
+        }
     );
   }
 
@@ -78,6 +90,12 @@ class _locationpARState extends State<locationAR> {
     _addThirdImage(arCoreController, vector.Vector3(3.0, -2, -3.5), vector.Vector4(0, 50, 0, 15));
     _addFourthImage(arCoreController, vector.Vector3(4.0, -2, -2.0), vector.Vector4(0, 50, 0, 25));
    // _addEigthImage(arCoreController, vector.Vector3(5.5, -2, -5.0), vector.Vector4(0, 40, 0, 12)); //right
+
+    controller.onNodeTap = (name) => handleTap(name);
+  }
+
+  void handleTap(String name){
+    showAlertDialog(name);
   }
 
   void _addImageLogo(ArCoreController controller) async {
