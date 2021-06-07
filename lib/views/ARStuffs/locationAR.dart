@@ -126,6 +126,7 @@ class _locationpARState extends State<locationAR> {
   void _onArCoreViewCreated(ArCoreController controller) {
     arCoreController = controller;
     //rotate vector4 0, -10, 0, 2
+    _addImageLogo(controller);
     _addSeventhImage(arCoreController, vector.Vector3(-4.0, -2, -2.0), vector.Vector4(0, -50, 0, 25)); //left
     _addSixthImage(arCoreController, vector.Vector3(-3.0, -2, -3.5), vector.Vector4(0, -50, 0, 17));
     _addFifthImage(arCoreController, vector.Vector3(-1.0, -2, -5.0), vector.Vector4(0, -50, 0, 8));
@@ -174,19 +175,22 @@ class _locationpARState extends State<locationAR> {
     if(name == 'magnifiedImageNodeName'){
       controller.removeNode(nodeName: 'magnifiedImageNodeName');
     }
+    if(name == 'imageLogoNode'){
+      showAlertDialog(firstImageDesc != null ? firstImageDesc : '');
+    }
   }
 
   void _showMagnifiedImage(ArCoreController controller, String imageSrc) async {
     Uint8List data = (await rootBundle.load(imageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
-        width: 3000,
-        height: 3000
+        width: 1700,
+        height: 1700
     );
     final node = ArCoreNode(
       name: 'magnifiedImageNodeName',
       image: image,
-      position: vector.Vector3(0, -2.0, -0.5),
+      position: vector.Vector3(0, -2.0, -1.5),
     );
     controller.addArCoreNode(node);
   }
@@ -199,6 +203,7 @@ class _locationpARState extends State<locationAR> {
         height: 350
     );
     final node = ArCoreNode(
+      name: 'imageLogoNode',
       image: image,
       position: vector.Vector3(0, -2.3, -3.5),
     );
