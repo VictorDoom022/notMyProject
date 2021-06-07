@@ -17,11 +17,19 @@ class locationAR extends StatefulWidget {
   final String sixthImageSrc;
   final String seventhImageSrc;
   final String eightImageSrc;
+  final String firstImageDesc;
+  final String secImageDesc;
+  final String thirdtImageDesc;
+  final String fourthImageDesc;
+  final String fifthImageDesc;
+  final String sixthImageDesc;
+  final String seventhImageDesc;
+  final String eightImageDesc;
 
-  const locationAR({Key key, this.appBatTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdtImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc}) : super(key: key);
+  const locationAR({Key key, this.appBatTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdtImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc, this.firstImageDesc, this.secImageDesc, this.thirdtImageDesc, this.fourthImageDesc, this.fifthImageDesc, this.sixthImageDesc, this.seventhImageDesc, this.eightImageDesc}) : super(key: key);
 
   @override
-  _locationpARState createState() => _locationpARState(appBatTitle, imageDescImageSrc, firstImageSrc, secImageSrc, thirdtImageSrc, fourthImageSrc, fifthImageSrc, sixthImageSrc, seventhImageSrc, eightImageSrc);
+  _locationpARState createState() => _locationpARState(appBatTitle, imageDescImageSrc, firstImageSrc, secImageSrc, thirdtImageSrc, fourthImageSrc, fifthImageSrc, sixthImageSrc, seventhImageSrc, eightImageSrc, firstImageDesc, secImageDesc, thirdtImageDesc, fourthImageDesc, fifthImageDesc, sixthImageDesc, seventhImageSrc, eightImageDesc);
 }
 
 class _locationpARState extends State<locationAR> {
@@ -36,10 +44,18 @@ class _locationpARState extends State<locationAR> {
   final String sixthImageSrc;
   final String seventhImageSrc;
   final String eightImageSrc;
+  final String firstImageDesc;
+  final String secImageDesc;
+  final String thirdtImageDesc;
+  final String fourthImageDesc;
+  final String fifthImageDesc;
+  final String sixthImageDesc;
+  final String seventhImageDesc;
+  final String eightImageDesc;
 
   ArCoreController arCoreController;
 
-  _locationpARState(this.appBatTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdtImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc);
+  _locationpARState(this.appBatTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdtImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc, this.firstImageDesc, this.secImageDesc, this.thirdtImageDesc, this.fourthImageDesc, this.fifthImageDesc, this.sixthImageDesc, this.seventhImageDesc, this.eightImageDesc);
 
   String firstImageNodeName = 'firstImageNode';
   String secondImageNodeName = 'secondImageNode';
@@ -103,7 +119,30 @@ class _locationpARState extends State<locationAR> {
   }
 
   void handleTap(String name){
-    showAlertDialog(name);
+    if(name == firstImageNodeName){
+      showAlertDialog(firstImageDesc != null ? firstImageDesc : '');
+    }
+    if(name == secondImageNodeName){
+      showAlertDialog(secImageDesc != null ? secImageDesc : '');
+    }
+    if(name == thirdImageNodeName){
+      showAlertDialog(thirdtImageDesc != null ? thirdtImageDesc : '');
+    }
+    if(name == fourthImageNodeName){
+      showAlertDialog(fourthImageDesc != null ? fourthImageDesc : '');
+    }
+    if(name == fifthImageNodeName){
+      showAlertDialog(fifthImageDesc != null ? fifthImageDesc : '');
+    }
+    if(name == sixthImageNodeName){
+      showAlertDialog(sixthImageDesc != null ? sixthImageDesc : '');
+    }
+    if(name == seventhImageNodeName){
+      showAlertDialog(seventhImageDesc != null ? seventhImageDesc : '');
+    }
+    if(name == eigthImageNodeName){
+      showAlertDialog(eightImageDesc != null ? eightImageDesc : '');
+    }
   }
 
   void _addImageLogo(ArCoreController controller) async {
