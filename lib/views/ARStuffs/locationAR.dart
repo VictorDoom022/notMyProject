@@ -96,8 +96,28 @@ class _locationpARState extends State<locationAR> {
     return showDialog(
         context: context,
         builder: (context){
-          return Dialog(
-            child: Text('Some text' + name),
+          return AlertDialog(
+            backgroundColor: Color.fromARGB(255, 6, 45, 86),
+            content: Text(
+                name,
+              style: TextStyle(
+                color: Colors.white
+              ),
+              textAlign: TextAlign.center,
+            ),
+            actions: [
+              TextButton(
+                child: Text(
+                    'Close',
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
+                ),
+                onPressed: (){
+                  Navigator.of(context).pop();
+                },
+              )
+            ],
           );
         }
     );

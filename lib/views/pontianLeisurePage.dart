@@ -81,6 +81,8 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                                 sixthImageSrc: 'assets/images/kukup/kukup taman.jpg',
                                 seventhImageSrc: 'assets/images/kukup/kukup view.jpg',
                                 eightImageSrc: 'assets/images/kukup/monkey.jpg',
+                                firstImageDesc: 'Pulai Kukup, 82300, Johor',
+                                secImageDesc: 'Location: \n Pulai Kukup, 82300, Johor',
                               );
                             }
                           )
