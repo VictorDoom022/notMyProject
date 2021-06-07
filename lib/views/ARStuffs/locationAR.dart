@@ -135,34 +135,60 @@ class _locationpARState extends State<locationAR> {
     _addFourthImage(arCoreController, vector.Vector3(4.0, -2, -2.0), vector.Vector4(0, 50, 0, 25));
    // _addEigthImage(arCoreController, vector.Vector3(5.5, -2, -5.0), vector.Vector4(0, 40, 0, 12)); //right
 
-    controller.onNodeTap = (name) => handleTap(name);
+    controller.onNodeTap = (name) => handleTap(controller, name);
   }
 
-  void handleTap(String name){
+  void handleTap(ArCoreController controller, String name){
     if(name == firstImageNodeName){
-      showAlertDialog(firstImageDesc != null ? firstImageDesc : '');
+      //showAlertDialog(firstImageDesc != null ? firstImageDesc : '');
+      _showMagnifiedImage(controller, fifthImageSrc);
     }
     if(name == secondImageNodeName){
-      showAlertDialog(secImageDesc != null ? secImageDesc : '');
+      //showAlertDialog(secImageDesc != null ? secImageDesc : '');
+      _showMagnifiedImage(controller, secImageSrc);
     }
     if(name == thirdImageNodeName){
-      showAlertDialog(thirdtImageDesc != null ? thirdtImageDesc : '');
+      //showAlertDialog(thirdtImageDesc != null ? thirdtImageDesc : '');
+      _showMagnifiedImage(controller, thirdtImageSrc);
     }
     if(name == fourthImageNodeName){
-      showAlertDialog(fourthImageDesc != null ? fourthImageDesc : '');
+      //showAlertDialog(fourthImageDesc != null ? fourthImageDesc : '');
+      _showMagnifiedImage(controller, fourthImageSrc);
     }
     if(name == fifthImageNodeName){
-      showAlertDialog(fifthImageDesc != null ? fifthImageDesc : '');
+      //showAlertDialog(fifthImageDesc != null ? fifthImageDesc : '');
+      _showMagnifiedImage(controller, fifthImageSrc);
     }
     if(name == sixthImageNodeName){
-      showAlertDialog(sixthImageDesc != null ? sixthImageDesc : '');
+      //showAlertDialog(sixthImageDesc != null ? sixthImageDesc : '');
+      _showMagnifiedImage(controller, sixthImageSrc);
     }
     if(name == seventhImageNodeName){
-      showAlertDialog(seventhImageDesc != null ? seventhImageDesc : '');
+      //showAlertDialog(seventhImageDesc != null ? seventhImageDesc : '');
+      _showMagnifiedImage(controller, seventhImageSrc);
     }
     if(name == eigthImageNodeName){
-      showAlertDialog(eightImageDesc != null ? eightImageDesc : '');
+      //showAlertDialog(eightImageDesc != null ? eightImageDesc : '');
+      _showMagnifiedImage(controller, eightImageSrc);
     }
+    if(name == 'magnifiedImageNodeName'){
+      controller.removeNode(nodeName: 'magnifiedImageNodeName');
+    }
+  }
+
+  void _showMagnifiedImage(ArCoreController controller, String imageSrc) async {
+    Uint8List data = (await rootBundle.load(imageSrc)).buffer.asUint8List();
+    final image = ArCoreImage(
+        bytes: data,
+        width: 3000,
+        height: 3000
+    );
+    final node = ArCoreNode(
+      name: 'magnifiedImageNodeName',
+      image: image,
+      position: vector.Vector3(0, -2.0, -0.5),
+    );
+    controller.addArCoreNode(node);
   }
 
   void _addImageLogo(ArCoreController controller) async {
