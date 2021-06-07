@@ -41,6 +41,15 @@ class _locationpARState extends State<locationAR> {
 
   _locationpARState(this.appBatTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdtImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc);
 
+  String firstImageNodeName = 'firstImageNode';
+  String secondImageNodeName = 'secondImageNode';
+  String thirdImageNodeName = 'thirdImageNode';
+  String fourthImageNodeName = 'fourthImageNode';
+  String fifthImageNodeName = 'fifthImageNode';
+  String sixthImageNodeName = 'sixthImageNode';
+  String seventhImageNodeName = 'seventhImageNode';
+  String eigthImageNodeName = 'eigthImageNode';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,7 +90,6 @@ class _locationpARState extends State<locationAR> {
   void _onArCoreViewCreated(ArCoreController controller) {
     arCoreController = controller;
     //rotate vector4 0, -10, 0, 2
-    _addImageLogo(arCoreController);
     _addSeventhImage(arCoreController, vector.Vector3(-4.0, -2, -2.0), vector.Vector4(0, -50, 0, 25)); //left
     _addSixthImage(arCoreController, vector.Vector3(-3.0, -2, -3.5), vector.Vector4(0, -50, 0, 17));
     _addFifthImage(arCoreController, vector.Vector3(-1.0, -2, -5.0), vector.Vector4(0, -50, 0, 8));
@@ -120,6 +128,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
+      name: fifthImageNodeName,
       image: image,
       position: imageVector,
       rotation: imageRotateVector
@@ -135,6 +144,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
+      name: secondImageNodeName,
       image: image,
       position: secImageVector,
       rotation: secImageRotateVector
@@ -150,6 +160,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
+      name: thirdImageNodeName,
       image: image,
       position: thirdImageVector,
       rotation: thirdImageRotateVector
@@ -180,6 +191,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
+      name: fifthImageNodeName,
       image: image,
       position: fifthImageVector,
       rotation: fifthImageRotateVector
@@ -195,6 +207,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
+      name: sixthImageNodeName,
       image: image,
       position: sixthImageVector,
       rotation: sixthImageRotateVector
@@ -210,6 +223,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
+      name: seventhImageNodeName,
       image: image,
       position: seventhImageVector,
       rotation: seventhImageRotateVector
@@ -225,6 +239,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
+      name: eigthImageNodeName,
       image: image,
       position: eigthImageVector,
       rotation: eigthImageRotateVector
