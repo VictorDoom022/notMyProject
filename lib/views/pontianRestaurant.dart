@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notmyproject/views/kukupIslandInfoPage.dart';
 
 class pontianRestaurantPage extends StatefulWidget {
   @override
@@ -58,17 +57,7 @@ class _pontianRestaurantPageState extends State<pontianRestaurantPage> {
                       color: Colors.white
                     ),
                   ),
-                  GestureDetector(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(
-                            builder:(context){
-                              return kukupIslandInfoPage();
-                            }
-                          )
-                        );
-                      },
-                      child: moreDetailsButton('assets/images/moreDetails.png', 'More details')
-                  ),
+                  moreDetailsButton('assets/images/moreDetails.png', 'More details'),
                 ],
               ),
 
