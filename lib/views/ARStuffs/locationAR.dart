@@ -7,55 +7,41 @@ import 'package:vector_math/vector_math_64.dart' as vector;
 
 class locationAR extends StatefulWidget {
 
-  final String appBatTitle;
+  final String appBarTitle;
   final String imageDescImageSrc;
   final String firstImageSrc;
   final String secImageSrc;
-  final String thirdtImageSrc;
+  final String thirdImageSrc;
   final String fourthImageSrc;
   final String fifthImageSrc;
   final String sixthImageSrc;
   final String seventhImageSrc;
   final String eightImageSrc;
-  final String firstImageDesc;
-  final String secImageDesc;
-  final String thirdtImageDesc;
-  final String fourthImageDesc;
-  final String fifthImageDesc;
-  final String sixthImageDesc;
-  final String seventhImageDesc;
-  final String eightImageDesc;
+  final String imageLogoDesc;
 
-  const locationAR({Key key, this.appBatTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdtImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc, this.firstImageDesc, this.secImageDesc, this.thirdtImageDesc, this.fourthImageDesc, this.fifthImageDesc, this.sixthImageDesc, this.seventhImageDesc, this.eightImageDesc}) : super(key: key);
+  const locationAR({Key key, this.appBarTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc, this.imageLogoDesc}) : super(key: key);
 
   @override
-  _locationpARState createState() => _locationpARState(appBatTitle, imageDescImageSrc, firstImageSrc, secImageSrc, thirdtImageSrc, fourthImageSrc, fifthImageSrc, sixthImageSrc, seventhImageSrc, eightImageSrc, firstImageDesc, secImageDesc, thirdtImageDesc, fourthImageDesc, fifthImageDesc, sixthImageDesc, seventhImageSrc, eightImageDesc);
+  _locationARState createState() => _locationARState(appBarTitle, imageDescImageSrc, firstImageSrc, secImageSrc, thirdImageSrc, fourthImageSrc, fifthImageSrc, sixthImageSrc, seventhImageSrc, eightImageSrc, imageLogoDesc);
 }
 
-class _locationpARState extends State<locationAR> {
+class _locationARState extends State<locationAR> {
 
-  final String appBatTitle;
+  final String appBarTitle;
   final String imageDescImageSrc;
   final String firstImageSrc;
   final String secImageSrc;
-  final String thirdtImageSrc;
+  final String thirdImageSrc;
   final String fourthImageSrc;
   final String fifthImageSrc;
   final String sixthImageSrc;
   final String seventhImageSrc;
   final String eightImageSrc;
-  final String firstImageDesc;
-  final String secImageDesc;
-  final String thirdtImageDesc;
-  final String fourthImageDesc;
-  final String fifthImageDesc;
-  final String sixthImageDesc;
-  final String seventhImageDesc;
-  final String eightImageDesc;
+  final String imageLogoDesc;
 
   ArCoreController arCoreController;
 
-  _locationpARState(this.appBatTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdtImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc, this.firstImageDesc, this.secImageDesc, this.thirdtImageDesc, this.fourthImageDesc, this.fifthImageDesc, this.sixthImageDesc, this.seventhImageDesc, this.eightImageDesc);
+  _locationARState(this.appBarTitle, this.imageDescImageSrc, this.firstImageSrc, this.secImageSrc, this.thirdImageSrc, this.fourthImageSrc, this.fifthImageSrc, this.sixthImageSrc, this.seventhImageSrc, this.eightImageSrc, this.imageLogoDesc);
 
   String firstImageNodeName = 'firstImageNode';
   String secondImageNodeName = 'secondImageNode';
@@ -64,7 +50,7 @@ class _locationpARState extends State<locationAR> {
   String fifthImageNodeName = 'fifthImageNode';
   String sixthImageNodeName = 'sixthImageNode';
   String seventhImageNodeName = 'seventhImageNode';
-  String eigthImageNodeName = 'eigthImageNode';
+  String eightImageNodeName = 'eightImageNode';
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +64,7 @@ class _locationpARState extends State<locationAR> {
           },
         ),
         title: Text(
-            appBatTitle,
+            appBarTitle,
           style: TextStyle(
               fontFamily: 'openSans',
               fontSize: 20
@@ -150,7 +136,7 @@ class _locationpARState extends State<locationAR> {
     }
     if(name == thirdImageNodeName){
       //showAlertDialog(thirdtImageDesc != null ? thirdtImageDesc : '');
-      _showMagnifiedImage(controller, thirdtImageSrc);
+      _showMagnifiedImage(controller, thirdImageSrc);
     }
     if(name == fourthImageNodeName){
       //showAlertDialog(fourthImageDesc != null ? fourthImageDesc : '');
@@ -168,7 +154,7 @@ class _locationpARState extends State<locationAR> {
       //showAlertDialog(seventhImageDesc != null ? seventhImageDesc : '');
       _showMagnifiedImage(controller, seventhImageSrc);
     }
-    if(name == eigthImageNodeName){
+    if(name == eightImageNodeName){
       //showAlertDialog(eightImageDesc != null ? eightImageDesc : '');
       _showMagnifiedImage(controller, eightImageSrc);
     }
@@ -176,7 +162,7 @@ class _locationpARState extends State<locationAR> {
       controller.removeNode(nodeName: 'magnifiedImageNodeName');
     }
     if(name == 'imageLogoNode'){
-      showAlertDialog(firstImageDesc != null ? firstImageDesc : '');
+      showAlertDialog(imageLogoDesc != null ? imageLogoDesc : '');
     }
   }
 
@@ -243,7 +229,7 @@ class _locationpARState extends State<locationAR> {
   }
 
   void _addThirdImage(ArCoreController controller, vector.Vector3 thirdImageVector, vector.Vector4 thirdImageRotateVector) async {
-    Uint8List data = (await rootBundle.load(thirdtImageSrc)).buffer.asUint8List();
+    Uint8List data = (await rootBundle.load(thirdImageSrc)).buffer.asUint8List();
     final image = ArCoreImage(
         bytes: data,
         width: 900,
@@ -329,7 +315,7 @@ class _locationpARState extends State<locationAR> {
         height: 1200
     );
     final node = ArCoreNode(
-      name: eigthImageNodeName,
+      name: eightImageNodeName,
       image: image,
       position: eigthImageVector,
       rotation: eigthImageRotateVector

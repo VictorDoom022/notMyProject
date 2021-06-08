@@ -74,11 +74,11 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
                               return locationAR(
-                                appBatTitle: 'JOHOR BAHRU > THEME PARK > LEGOLAND',
+                                appBarTitle: 'JOHOR BAHRU > THEME PARK > LEGOLAND',
                                 imageDescImageSrc: 'assets/images/legoland/legoland location.JPG',
                                 firstImageSrc: 'assets/images/legoland/legoland1.jpg',
                                 secImageSrc: 'assets/images/legoland/legoland2.jpg',
-                                thirdtImageSrc: 'assets/images/legoland/legoland3.jpg',
+                                thirdImageSrc: 'assets/images/legoland/legoland3.jpg',
                                 fourthImageSrc: 'assets/images/legoland/legoland4.jpg',
                                 fifthImageSrc: 'assets/images/legoland/legoland5.jpg',
                                 sixthImageSrc: 'assets/images/legoland/legoland6.jpg',
@@ -130,11 +130,11 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
                               return locationAR(
-                                appBatTitle: 'JOHOR BAHRU > THEME PARK > DANGA BAY',
+                                appBarTitle: 'JOHOR BAHRU > THEME PARK > DANGA BAY',
                                 imageDescImageSrc: 'assets/images/dangaBay/danga bay location.JPG',
                                 firstImageSrc: 'assets/images/dangaBay/danga bay 1.jpg',
                                 secImageSrc: 'assets/images/dangaBay/danga bay 2.jpg',
-                                thirdtImageSrc: 'assets/images/dangaBay/danga bay 3.jpg',
+                                thirdImageSrc: 'assets/images/dangaBay/danga bay 3.jpg',
                                 fourthImageSrc: 'assets/images/dangaBay/danga bay 4.jpg',
                                 fifthImageSrc: 'assets/images/dangaBay/danga bay 5.jpg',
                                 sixthImageSrc: 'assets/images/dangaBay/danga.jpg',

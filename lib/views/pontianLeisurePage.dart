@@ -71,18 +71,17 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
                               return locationAR(
-                                appBatTitle: 'PONTIAN > LEISURE > KUKUP ISLAND',
+                                appBarTitle: 'PONTIAN > LEISURE > KUKUP ISLAND',
                                 imageDescImageSrc: 'assets/images/kukup/kukupLogo.jpeg',
                                 firstImageSrc: 'assets/images/kukup/bridge new.jpg',
                                 secImageSrc: 'assets/images/kukup/kukup tree.jpg',
-                                thirdtImageSrc: 'assets/images/kukup/kukup scene.jpg',
+                                thirdImageSrc: 'assets/images/kukup/kukup scene.jpg',
                                 fourthImageSrc: 'assets/images/kukup/kukup scene 1.jpg',
                                 fifthImageSrc: 'assets/images/kukup/kukup scene 2.jpg',
                                 sixthImageSrc: 'assets/images/kukup/kukup taman.jpg',
                                 seventhImageSrc: 'assets/images/kukup/bridge new.jpg',
                                 eightImageSrc: 'assets/images/kukup/monkey.jpg',
-                                firstImageDesc: 'Pulai Kukup, 82300, Johor',
-                                secImageDesc: 'Location: \n Pulai Kukup, 82300, Johor',
+                                imageLogoDesc: 'Location: \n Pulai Kukup, 82300, Johor',
                               );
                             }
                           )
@@ -126,11 +125,11 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
                           return locationAR(
-                            appBatTitle: 'PONTIAN > LEISURE > TANJUNG PIAI',
+                            appBarTitle: 'PONTIAN > LEISURE > TANJUNG PIAI',
                             imageDescImageSrc: 'assets/images/tanjungPiai/location tanjung piai.JPG',
                             firstImageSrc: 'assets/images/tanjungPiai/Tanjung-Piai 1.jpg',
                             secImageSrc: 'assets/images/tanjungPiai/tanjung piai 2.jpg',
-                            thirdtImageSrc: 'assets/images/tanjungPiai/tanjung piai3.jpg',
+                            thirdImageSrc: 'assets/images/tanjungPiai/tanjung piai3.jpg',
                             fourthImageSrc: 'assets/images/tanjungPiai/tanjung piai 4.jpg',
                             fifthImageSrc: 'assets/images/tanjungPiai/tanjung piai 5.jpg',
                             sixthImageSrc: 'assets/images/tanjungPiai/tanjung piai 6.jpg',
