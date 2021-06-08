@@ -188,7 +188,7 @@ class _locationARState extends State<locationAR> {
         height: 350
     );
     final node = ArCoreNode(
-      name: 'imageLogoNode',k
+      name: 'imageLogoNode',
       image: image,
       position: vector.Vector3(0, -2.3, -3.5),
     );
