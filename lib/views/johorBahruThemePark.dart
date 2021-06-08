@@ -84,6 +84,7 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                                 sixthImageSrc: 'assets/images/legoland/legoland6.jpg',
                                 seventhImageSrc: 'assets/images/legoland/legoland 7.jpg',
                                 eightImageSrc: 'assets/images/legoland/legoland8.jpg',
+                                imageLogoDesc: 'Location: \n LEGOLAND Malaysua, Persiaran Medini Utara 3, Bandar, 79250 Johor Bahru, Johor',
                               );
                             }
                         )
@@ -140,6 +141,7 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                                 sixthImageSrc: 'assets/images/dangaBay/danga.jpg',
                                 seventhImageSrc: 'assets/images/dangaBay/danga bay 7.jpg',
                                 eightImageSrc: 'assets/images/dangaBay/danga bay 8.jpg',
+                                imageLogoDesc: 'Location: \n Jalan Bertingkat Skudai, Danga Bay, 80200 Johor Bahru, Johor',
                               );
                             }
                         )

@@ -85,6 +85,7 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
                                 sixthImageSrc: 'assets/images/gunungBanang/gunungbanang6.jpg',
                                 seventhImageSrc: 'assets/images/gunungBanang/gunung banang7.jpg',
                                 eightImageSrc: 'assets/images/gunungBanang/gunung banang 8.JPG',
+                                imageLogoDesc: 'Location: \n Kampung Petani, 83000 Batu Pahat, Johor',
                               );
                             }
                         )
@@ -141,6 +142,7 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
                                 sixthImageSrc: 'assets/images/bukitpayung/bukit payung6.jpg',
                                 seventhImageSrc: 'assets/images/bukitpayung/bukit payung7.jpg',
                                 eightImageSrc: 'assets/images/bukitpayung/bukit payung8.jpg',
+                                imageLogoDesc: 'Location: \n Kampung Kangkar Merimau, 83500 Parit Sulong, Johor',
                               );
                             }
                         )

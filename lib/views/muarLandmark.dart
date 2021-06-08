@@ -83,6 +83,7 @@ class _muarLandMarkPageState extends State<muarLandMarkPage> {
                                 sixthImageSrc: 'assets/images/muarlandmark/landmark6.jpg',
                                 seventhImageSrc: 'assets/images/muarlandmark/landmark7.jpg',
                                 eightImageSrc: 'assets/images/muarlandmark/landmark8.jpg',
+                                imageLogoDesc: 'Location: \n 1947, Jalan Abdullah, Pekan Muar, 80400 Muar, Johor',
                               );
                             }
                         )

@@ -135,6 +135,7 @@ class _pontianLeisurePageState extends State<pontianLeisurePage> {
                             sixthImageSrc: 'assets/images/tanjungPiai/tanjung piai 6.jpg',
                             seventhImageSrc: 'assets/images/tanjungPiai/tanjung piai 7.jpg',
                             eightImageSrc: 'assets/images/tanjungPiai/tanjung piai 8.jpg',
+                            imageLogoDesc: 'Location: \n Tanjung Piai, 82300 Kukup, Johor',
                           );
                         }
                         )
