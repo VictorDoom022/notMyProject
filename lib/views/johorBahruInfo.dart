@@ -34,12 +34,7 @@ class _johorBahruInfoState extends State<johorBahruInfo> {
           leading: IconButton(
             icon: Icon(Icons.keyboard_arrow_left),
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(
-                  builder:(context){
-                    return districtPage();
-                  }
-              )
-              );
+              Navigator.of(context).pop();
             },
           ),
           title: Text(

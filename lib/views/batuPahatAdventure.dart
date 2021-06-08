@@ -19,12 +19,7 @@ class _batuPahatAdventurePageState extends State<batuPahatAdventurePage> {
         leading: IconButton(
           icon: Icon(Icons.keyboard_arrow_left),
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(
-                builder:(context){
-                  return batuPahatInfo();
-                }
-            )
-            );
+            Navigator.of(context).pop();
           },
         ),
         title: Text(

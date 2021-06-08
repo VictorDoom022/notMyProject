@@ -18,12 +18,7 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
         leading: IconButton(
           icon: Icon(Icons.keyboard_arrow_left),
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(
-                builder:(context){
-                  return johorBahruInfo();
-                }
-            )
-            );
+            Navigator.of(context).pop();
           },
         ),
         title: Text(

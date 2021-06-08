@@ -16,12 +16,7 @@ class _pontianRestaurantPageState extends State<pontianRestaurantPage> {
         leading: IconButton(
           icon: Icon(Icons.keyboard_arrow_left),
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(
-                builder:(context){
-                  return pontianInfo();
-                }
-            )
-            );
+            Navigator.of(context).pop();
           },
         ),
         title: Text(
