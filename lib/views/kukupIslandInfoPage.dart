@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notmyproject/views/pontianLeisurePage.dart';
 
 class kukupIslandInfoPage extends StatefulWidget {
   @override

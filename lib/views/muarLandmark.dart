@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notmyproject/views/kukupIslandInfoPage.dart';
-import 'package:notmyproject/views/muarInfo.dart';
-import 'package:notmyproject/views/pontianInfo.dart';
 
 import 'ARStuffs/locationAR.dart';
 

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:notmyproject/views/batuPahatInfo.dart';
 import 'package:notmyproject/views/muarInfo.dart';
 import 'package:notmyproject/views/pontianInfo.dart';
-import 'package:notmyproject/views/welcomePage.dart';
 
 import 'johorBahruInfo.dart';
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notmyproject/views/districtPage.dart';
 import 'package:notmyproject/views/pontianLeisurePage.dart';
 import 'package:notmyproject/views/pontianRestaurant.dart';
 
