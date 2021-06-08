@@ -65,7 +65,7 @@ class _muarLandMarkPageState extends State<muarLandMarkPage> {
                         Navigator.push(context, MaterialPageRoute(
                             builder:(context){
                               return locationAR(
-                                appBarTitle: 'MUAR > LANDMARK > Muar City Landmark',
+                                appBarTitle: 'MUAR > LANDMARK > MUAR CITY LANDMARK',
                                 imageDescImageSrc: 'assets/images/muarlandmark/muarlandmark location.JPG',
                                 firstImageSrc: 'assets/images/muarlandmark/muarlandmark.jpg',
                                 secImageSrc: 'assets/images/muarlandmark/muarlandmark1.jpg',

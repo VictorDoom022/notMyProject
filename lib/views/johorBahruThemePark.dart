@@ -76,7 +76,7 @@ class _johorBahruThemeParkPageState extends State<johorBahruThemeParkPage> {
                                 sixthImageSrc: 'assets/images/legoland/legoland6.jpg',
                                 seventhImageSrc: 'assets/images/legoland/legoland 7.jpg',
                                 eightImageSrc: 'assets/images/legoland/legoland8.jpg',
-                                imageLogoDesc: 'Location: \n LEGOLAND Malaysua, Persiaran Medini Utara 3, Bandar, 79250 Johor Bahru, Johor',
+                                imageLogoDesc: 'Location: \n LEGOLAND Malaysia, Persiaran Medini Utara 3, Bandar, 79250 Johor Bahru, Johor',
                               );
                             }
                         )
