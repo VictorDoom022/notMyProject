@@ -165,10 +165,10 @@ class _locationARState extends State<locationAR> {
       showAlertDialog(imageLogoDesc != null ? imageLogoDesc : '');
     }
     if(name == '180InstructionNode'){
-      showAlertDialog('move your phone with 180°');
+      showAlertDialog('Move your phone with 180°');
     }
     if(name == 'zoomInInstructionNode'){
-      showAlertDialog('tap the image to enlarge');
+      showAlertDialog('Tap the image to enlarge');
     }
   }
 
