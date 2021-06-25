@@ -111,7 +111,8 @@ class _locationARState extends State<locationAR> {
   void _onArCoreViewCreated(ArCoreController controller) {
     arCoreController = controller;
     //rotate vector4 0, -10, 0, 2
-    _addImageLogo(controller);
+    //_addImageLogo(controller);
+    _addImageInstruction(controller);
     _addSeventhImage(arCoreController, vector.Vector3(-4.0, -2, -2.0), vector.Vector4(0, -50, 0, 25)); //left
     _addSixthImage(arCoreController, vector.Vector3(-3.0, -2, -3.5), vector.Vector4(0, -50, 0, 17));
     _addFifthImage(arCoreController, vector.Vector3(-1.0, -2, -5.0), vector.Vector4(0, -50, 0, 8));
@@ -163,6 +164,12 @@ class _locationARState extends State<locationAR> {
     if(name == 'imageLogoNode'){
       showAlertDialog(imageLogoDesc != null ? imageLogoDesc : '');
     }
+    if(name == '180InstructionNode'){
+      showAlertDialog('move your phone with 180°');
+    }
+    if(name == 'zoomInInstructionNode'){
+      showAlertDialog('tap the image to enlarge');
+    }
   }
 
   void _showMagnifiedImage(ArCoreController controller, String imageSrc) async {
@@ -178,6 +185,47 @@ class _locationARState extends State<locationAR> {
       position: vector.Vector3(0, -2.0, -1.5),
     );
     controller.addArCoreNode(node);
+  }
+
+  void _addImageInstruction(ArCoreController controller) async{
+    Uint8List instructionOne = (await rootBundle.load('assets/images/180logo.png')).buffer.asUint8List();
+    Uint8List instructionTwo = (await rootBundle.load('assets/images/location.png')).buffer.asUint8List();
+    Uint8List instructionThree = (await rootBundle.load('assets/images/zoomIn.png')).buffer.asUint8List();
+
+    final imageOne = ArCoreImage(
+        bytes: instructionOne,
+        width: 650,
+        height: 350
+    );
+    final nodeOne = ArCoreNode(
+      name: '180InstructionNode',
+      image: imageOne,
+      position: vector.Vector3(-2, 1, -5),
+    );
+    final imageTwo = ArCoreImage(
+        bytes: instructionTwo,
+        width: 650,
+        height: 350
+    );
+    final nodeTwo = ArCoreNode(
+      name: 'imageLogoNode',
+      image: imageTwo,
+      position: vector.Vector3(0, 1, -5),
+    );
+    final imageThree = ArCoreImage(
+        bytes: instructionThree,
+        width: 650,
+        height: 350
+    );
+    final nodeThree = ArCoreNode(
+      name: 'zoomInInstructionNode',
+      image: imageThree,
+      position: vector.Vector3(2, 1, -5),
+    );
+
+    controller.addArCoreNode(nodeOne);
+    controller.addArCoreNode(nodeTwo);
+    controller.addArCoreNode(nodeThree);
   }
 
   void _addImageLogo(ArCoreController controller) async {
